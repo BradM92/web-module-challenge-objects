@@ -111,9 +111,12 @@ Write a function that creates an object with name, rating, feedback, add the new
   4. should return the resulting array
 */
 
-function addReview(/*Your Code Here */){
+function addReview(ReviewArray, reviewName, reviewRating, reviewFeedback){
   /*Your Code Here */
+let ReviewArrayNew = [ReviewArray.push({name: reviewName, rating: reviewRating, review: reviewFeedback })];
+
 }
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function to return a review based on the index of the review in the array.
