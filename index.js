@@ -1,10 +1,10 @@
 /*MAKE SURE TO RETURN ALL OF THE ANSWERS ON THESE TASKS, IF YOU DON'T, THE AUTOGRADER WILL NOT WORK*/
-// First Commit
+
 /*When doing these tasks, we recommend using console.log to test the output of your code to make sure it works correctly.*/
 
 ///////////////Menu Items (MVP)///////////////////
-const latte = {name: "Cafe Latte", price: 4, category: "Drinks"};
-const breakfastBurrito = {name: "Breakfast Burrito", price: 16, category:"Breakfast"};
+// const latte = {name: "Cafe Latte", price: 4, category: "Drinks"};
+// const breakfastBurrito = {name: "Breakfast Burrito", price: 16, category:"Breakfast"};
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1a: Make a function that builds objects🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Add to the function createMenuItems below so it will create objects following the same format found above for latte and breakfastBurrito (name, price, category).  
@@ -16,13 +16,13 @@ The function should:
 */
 
 function createMenuItem(nameItem, priceItem, categoryItem){
-    /*Your code here*/
-    const menuItemObject = {
-    name: nameItem,
-    price: priceItem,
-    category: categoryItem,
-    }
-    return menuItemObject;
+  /*Your code here*/
+  const menuItemObject = {
+  name: nameItem,
+  price: priceItem,
+  category: categoryItem,
+  }
+  return menuItemObject;
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1b: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -39,17 +39,14 @@ console.log(createMenuItem("burger with bacon", 12, "dinner"));
 console.log(createMenuItem("burger with jalapenos", 14, "dinner special"));
 
 
-
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 You're having a lunch special! 25% off for teachers and students, 10% off for everyone else. Add a method to the 
 burger object below that automatically calculates price depending on the a string received as a parameter. 
-
 Using the burger object below do the following:
   1. Add a method called discount to the burger object 
   2. The discount method should accept a string as a parameter (example: "teacher", "student", or "public")
   3. Depending on the string, it will return the correct discounted price
   4. Check your work by invoking the function and passing in 'teacher', 'student', or 'public' as your arguments to ensure they are returning the correct price.
-
   For example: burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2
 */
 const burger = {
@@ -71,22 +68,24 @@ console.log(burger.discount("teacher"));
 console.log(burger.discount("public"));
 console.log(burger.discount("student"));
 
+
+
 ///////////////Reviews (MVP)///////////////////
 const reviews = [
     {name: "Daniela", rating: 5, feedback:"Beautiful atmosphere and wonderful vegan options!"},
     {name: "Jack", rating: 3, feedback:"A little too hipster for my taste, but the burger was decent, if overpriced"},
     {name: "Miranda", rating: 4, feedback:"fun trivia and cool vibes"},
-    {name: "Wen", rating: 4.5, feedback:"I don't leave my house often, but when I do, it's for this place. Highly reccomend."},
+    {name: "Wen", rating: 4.5, feedback:"I don't leave my house often, but when I do, it's for this place. Highly recommend."},
     {name: "Brett", rating: 3, feedback: "great selection of snacks and a nice cafe area to get work done during the day."},
     {name: "Julius", rating: 2, feedback: "I was largely unimpressed by this venue. Nothing special on the menu and too expensive. The atmosphere is polarizing, and not for me, but I think some would like it." },
     {name: "Lauren", rating: 4, feedback: "Absolutely love that they have karaoke Fridays! Food and drink selection is okay."},
     {name: "Reyna", rating: 3.5, feedback: ""},
-]
+];
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
-*/console.log(reviews[5]);
+*/
 
 
 
@@ -97,8 +96,8 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
   2. log the reviews array to the console to check your work
 */
 reviews[7].feedback = 'this place is chill with really cool people, great for getting work done on weekdays';
-console.log(reviews);
 
+// comment
 
 
 
@@ -111,16 +110,12 @@ Write a function that creates an object with name, rating, feedback, add the new
   4. should return the resulting array
 */
 
-function addReview(ReviewArray, reviewName, reviewRating, reviewFeedback){
+function addReview(/*Your Code Here */){
   /*Your Code Here */
-let ReviewArrayNew = [ReviewArray.push({name: reviewName, rating: reviewRating, review: reviewFeedback })];
-
 }
-
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function to return a review based on the index of the review in the array.
-
 Use the getReviewByIndex function below to do the following:
   1. Receive an array
   2. Receive a number which is the desired index in the array
@@ -138,7 +133,6 @@ function getReviewByIndex(/*Your code here*/) {
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Write a function to get information about the most recent (last) review called `getLastReview`
-
 Use the getLastReview function below to do the following:
   1. Receive an array of objects as a parameter
   2. Return the last index as a string in the format: "{name} gave the restaurant a {rating} star review, and their feedback was: {feedback}"
@@ -148,7 +142,7 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(Array7,) {
+function getLastReview(/*Your code here*/) {
   /*Your code here*/
 } 
 
@@ -161,7 +155,6 @@ Use the getReviewsByRating function below to do the following:
   1. Receive the array that holds all the reviews
   2. Receive a rating
   3. Return an array with all the reviews in that range
-
   For example: getReviewByRating(reviews, 4) would return these reviews in the 4 range (4-4.9):
   [
     {name: "Miranda", rating: 4, feedback:"fun trivia and cool vibes"},
@@ -179,7 +172,6 @@ Use the getReviewsByRating function below to do the following:
 Use the getLongReviews function below to do the following:
   1. Receive the array that holds all the reviews
   2. Return an array with all the reviews that have more than 15 words in their feedback
-
   For example: getLongReviews(reviews) would return:
   [
     {name: "Wen", rating: 4.5, feedback:"I don't leave my house often, but when I do, it's for this place. Highly reccomend."},
@@ -195,7 +187,6 @@ function getLongReviews(/* code here */) {
 
 /* 💪💪💪💪💪💪💪💪💪💪 STRETCH 3: 💪💪💪💪💪💪💪💪💪💪 
 This stretch goal does not use the reviews data!  You create your own object in this stretch goal.
-
 Use the carMaker function below to do the following:
   1. Receive a value representing the odometer (how many miles it's been driven) and use that when creating the object
   2. Create a drive method inside the object that increases the odometer value
@@ -204,7 +195,6 @@ Use the carMaker function below to do the following:
      a. The drive method which, when called, takes a distance value as its parameter
      b. The drive method should also cause the odometer value in the object to be increased by the distance
      c. Then the drive method should return the updated value of the odometer
-
   For example: Let's say we created the object in the variable car1 with an odometer value of 10.
   Then we called car1.drive(100)
   It would return 110 because it was created with 10 as the odometer and we added 100 to it with the drive method 
@@ -229,4 +219,7 @@ module.exports = {
   addReview,
   getReviewByIndex,
   getLastReview,
+  getReviewByRating,
+  getLongReviews,
+  carMaker,
 }
