@@ -85,7 +85,7 @@ const reviews = [
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
-*/
+*/ console.log(reviews[5].feedback);
 
 
 
@@ -97,7 +97,7 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
 */
 reviews[7].feedback = 'this place is chill with really cool people, great for getting work done on weekdays';
 
-// comment
+console.log(reviews[7]);
 
 
 
@@ -110,8 +110,10 @@ Write a function that creates an object with name, rating, feedback, add the new
   4. should return the resulting array
 */
 
-function addReview(/*Your Code Here */){
+function addReview(arrayOne, nameSent, ratingSent, feedbackSent){
   /*Your Code Here */
+  arrayOne.push({name: nameSent, rating: ratingSent, feedback: feedbackSent });
+  return arrayOne;
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -124,8 +126,9 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(/*Your code here*/) {
+function getReviewByIndex(ArraySent, indexNum,) {
   /*Your code here*/
+  return `${ArraySent[indexNum].name} gave the restaurant a ${ArraySent[indexNum].rating} star review, and their feedback was: ${ArraySent[indexNum].feedback}`;
 }
 
 
